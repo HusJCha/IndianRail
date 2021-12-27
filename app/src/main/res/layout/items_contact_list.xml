@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutIcon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/theme_image_back">
+
+        <module.customview.TextViewNotoSansBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="A"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/imageViewCall"
+        android:layout_toEndOf="@+id/relativeLayoutIcon"
+        android:orientation="vertical">
+
+        <module.customview.TextViewNotoSansRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:text="Amit Ladani, Manager"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <module.customview.TextViewNotoSansRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp"
+            android:text="+91 00000 00000"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <module.customview.TextViewNotoSansRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp"
+            android:text="Rajkot, Department"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp"
+        android:src="@drawable/ic_call" />
+</RelativeLayout>

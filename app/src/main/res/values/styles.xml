@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="style_textview_heading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginStart">40dp</item>
+        <item name="android:layout_marginEnd">40dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="style_button_login_otp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginStart">40dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginEnd">40dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="style_textview_signup_field_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="style_edittext_signup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/theme_edittext</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_spinner_filter">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/theme_edittext</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_editext_cardivew_signup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:elevation">10dp</item>
+    </style>
+
+    <style name="DBTheme" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+</resources>

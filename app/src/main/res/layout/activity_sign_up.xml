@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#02FBF8F8"
+    tools:context=".SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonLogin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/splash_logo" />
+
+            <module.customview.TextViewNotoSansBold
+                style="@style/style_textview_heading"
+                android:text="Let's start with creating your account" />
+
+            <module.customview.TextViewNotoSansRegular
+                style="@style/style_textview_signup_field_title"
+                android:text="@string/first_name" />
+
+            <androidx.cardview.widget.CardView
+                style="@style/style_editext_cardivew_signup"
+                app:cardBackgroundColor="@color/white">
+
+                <EditText
+                    style="@style/style_edittext_signup"
+                    android:imeOptions="actionNext" />
+            </androidx.cardview.widget.CardView>
+
+            <module.customview.TextViewNotoSansRegular
+                style="@style/style_textview_signup_field_title"
+                android:layout_marginTop="10dp"
+                android:text="@string/last_name" />
+
+            <androidx.cardview.widget.CardView
+                style="@style/style_editext_cardivew_signup"
+                app:cardBackgroundColor="@color/white">
+
+                <EditText
+                    style="@style/style_edittext_signup"
+                    android:imeOptions="actionNext" />
+            </androidx.cardview.widget.CardView>
+
+            <module.customview.TextViewNotoSansRegular
+                style="@style/style_textview_signup_field_title"
+                android:layout_marginTop="10dp"
+                android:text="@string/email" />
+
+            <androidx.cardview.widget.CardView
+                style="@style/style_editext_cardivew_signup"
+                app:cardBackgroundColor="@color/white">
+
+                <EditText style="@style/style_edittext_signup" />
+            </androidx.cardview.widget.CardView>
+
+            <module.customview.TextViewNotoSansRegular
+                style="@style/style_textview_signup_field_title"
+                android:layout_marginTop="10dp"
+                android:text="@string/mobile" />
+
+            <androidx.cardview.widget.CardView
+                style="@style/style_editext_cardivew_signup"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="@string/_91"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/theme_edittext"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:padding="8dp"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <module.customview.TextViewNotoSansRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="100dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/by_signing_up_you_agree_to_out_terms_condition_and_pricacy_policy"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        style="@style/style_button_login_otp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/sign_up" />
+</RelativeLayout>

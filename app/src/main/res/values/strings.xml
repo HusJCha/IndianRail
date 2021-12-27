@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">IndianRail</string>
+    <string name="by_signing_up_you_agree_to_out_terms_condition_and_pricacy_policy"><![CDATA[By Signing up, you agree to out terms & Condition and Pricacy policy]]></string>
+    <string name="verify_continue"><![CDATA[Verify & Continue]]></string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="_91">+91</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="update">Update</string>
+    <string name="filter">Filter</string>
+    <string name="search">Search</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="designation">Designation</string>
+    <string name="select_designation">Select Designation</string>
+    <string name="grade">Grade</string>
+    <string name="select_grade">Select Grade</string>
+    <string name="zone">Zone</string>
+    <string name="select_zone">Select Zone</string>
+    <string name="division">Division</string>
+    <string name="select_division">Select Division</string>
+    <string name="department">Department</string>
+    <string name="select_department">Select Department</string>
+</resources>
