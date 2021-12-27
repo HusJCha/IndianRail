@@ -7,6 +7,7 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.chaos.view.PinView
 import module.ApplicationPrefs
@@ -39,10 +40,20 @@ class OtpActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.buttonVerifyOtp -> {
-                prefs.setUserId("1")
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
-                finishAffinity()
+                if (firstPinView.text.toString().equals("1234")) {
+                    prefs.setUserId("1")
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                    finishAffinity()
+                }
+                else
+                {
+                    Toast.makeText(
+                        applicationContext,
+                        "Invalid OTP. Try again",
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
             }
             R.id.imageViewBackArrow -> {
                 onBackPressed()

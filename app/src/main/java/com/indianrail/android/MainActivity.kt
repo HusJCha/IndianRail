@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         when (p0?.id) {
             R.id.imageViewLogout -> {
                 prefs.clearUser()
-                val intent = Intent(this, SignUpActivity::class.java)
+                val intent = Intent(this, RegisterActivity::class.java)
                 startActivity(intent)
                 finishAffinity()
             }

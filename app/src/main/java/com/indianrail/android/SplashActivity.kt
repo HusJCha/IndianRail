@@ -22,7 +22,7 @@ class SplashActivity : AppCompatActivity() {
                 startActivity(intent)
                 finish()
             } else {
-                val intent = Intent(this, SignUpActivity::class.java)
+                val intent = Intent(this, RegisterActivity::class.java)
                 startActivity(intent)
                 finish()
             }

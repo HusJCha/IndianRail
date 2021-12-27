@@ -10,8 +10,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/buttonLogin"
-        android:layout_centerVertical="true">
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,7 +29,7 @@
 
             <module.customview.TextViewNotoSansBold
                 style="@style/style_textview_heading"
-                android:text="Update your Profile" />
+                android:text="My Profile" />
 
             <module.customview.TextViewNotoSansRegular
                 style="@style/style_textview_signup_field_title"
@@ -40,7 +39,7 @@
                 style="@style/style_editext_cardivew_signup"
                 app:cardBackgroundColor="@color/white">
 
-                <androidx.appcompat.widget.AppCompatEditText
+                <module.customview.TextViewNotoSansRegular
                     style="@style/style_edittext_signup"
                     android:imeOptions="actionNext" />
             </androidx.cardview.widget.CardView>
@@ -54,7 +53,7 @@
                 style="@style/style_editext_cardivew_signup"
                 app:cardBackgroundColor="@color/white">
 
-                <androidx.appcompat.widget.AppCompatEditText
+                <module.customview.TextViewNotoSansRegular
                     style="@style/style_edittext_signup"
                     android:imeOptions="actionNext" />
             </androidx.cardview.widget.CardView>
@@ -68,7 +67,7 @@
                 style="@style/style_editext_cardivew_signup"
                 app:cardBackgroundColor="@color/white">
 
-                <androidx.appcompat.widget.AppCompatEditText style="@style/style_edittext_signup" />
+                <module.customview.TextViewNotoSansRegular style="@style/style_edittext_signup" />
             </androidx.cardview.widget.CardView>
 
             <module.customview.TextViewNotoSansRegular
@@ -80,7 +79,7 @@
                 style="@style/style_editext_cardivew_signup"
                 app:cardBackgroundColor="@color/white">
 
-                <androidx.appcompat.widget.AppCompatEditText
+                <module.customview.TextViewNotoSansRegular
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/theme_edittext"
@@ -93,11 +92,28 @@
         </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/buttonLogin"
-        style="@style/style_button_login_otp"
+    <LinearLayout
+        android:id="@+id/linearBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/colorPrimary"
-        android:text="@string/update" />
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/buttonLogin"
+            style="@style/style_button_login_otp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Logout" />
+
+        <Button
+            android:id="@+id/buttonEditProfile"
+            style="@style/style_button_login_otp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/update" />
+    </LinearLayout>
 </RelativeLayout>
